@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> STORM X</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top storm-nav">
+    <div class="container">
+      <a class="navbar-brand storm-logo" href="index.html">
+        <img src="assets/images/WhatsApp Image 2026-10-04 at 11.36.31 PM.jpeg" alt="STORM X">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link active" href="shop.html">Shop</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html#styles">Styles</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+        </ul>
+        <div class="nav-actions d-flex gap-3">
+          <a href="shop.html" class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="#" class="nav-icon">
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <a href="cart.html" class="nav-icon cart-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cartCount">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="page-top section-dark min-vh-100">
+    <div class="container">
+      <div class="shop-header">
+        <p class="eyebrow gold">STORM X COLLECTION</p>
+        <h1>SHOP ALL</h1>
+        <p>Find your fit. Choose your style.</p>
+      </div>
+      <div class="row g-4">
+        <aside class="col-lg-3">
+          <div class="filter-box">
+            <div class="filter-title">FILTERS <button id="clearFilters">CLEAR</button></div>
+            <label>SEARCH</label>
+            <input id="searchInput" class="form-control storm-input" placeholder="Search products...">
+            <label>STYLE</label>
+            <div id="styleFilters" class="filter-options"></div>
+            <label>CATEGORY</label>
+            <div class="filter-options">
+              <label class="check">
+                <input type="checkbox" value="Hoodie" class="category-filter"> Hoodies</label>
+                <label class="check">
+                  <input type="checkbox" value="Tracksuit" class="category-filter"> Tracksuits</label>
+                </div>
+                <label>SIZE</label>
+                <div id="sizeFilters" class="size-filter"></div>
+              </div>
+            </aside>
+            <section class="col-lg-9">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <span id="resultCount"></span>
+                <select id="sortSelect" class="sort-select">
+                  <option value="featured">Featured</option>
+                  <option value="low">Price: Low to High</option>
+                  <option value="high">Price: High to Low</option>
+                </select>
+              </div>
+              <div class="row g-3" id="shopGrid"></div>
+            </section>
+          </div></div>
+        </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+</body></html>
